@@ -1,0 +1,286 @@
+:root {
+    --code-logo-green-color: #26877f; /* var(--code-bg-color) */
+    --code-logo-red-color: #b53434;
+    --code-font-darkgreen-color: #0c2b29;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5 {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #def6f4;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2rem;
+    color: var(--code-font-darkgreen-color);
+}
+
+body::selection{
+    background-color: #F7C566;
+    color: #b53434;
+}
+
+.container {
+    max-width: 1222px;
+    margin: 30px auto;
+    padding: 0 5%;
+}
+
+.header-container {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    background-image: url("../assets/img/flowers-outside.jpg");
+    background-size: cover;
+    background-position: 0% 67%;
+    border-radius: 20px;    
+}
+
+.header-logo-img {
+    height: 200px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #b0e9e4eb;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    background-color: #fcfefe;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.nav-list-item {
+    list-style: none;
+    padding: 0 25px;
+}
+
+.nav-list-item:hover {
+    transform: scale(1.1);
+    transition: 300ms;
+}
+
+.nav-link {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--code-logo-green-color);
+}
+
+.nav-link:hover {
+    color: var(--code-logo-red-color);
+    transform: translate(10px);
+}
+
+.main-container {
+    display: block;
+}
+
+.main-text {
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    /* gap: 40px; */
+    /* margin: 20px 0; */
+}
+
+.main-header h1 {
+    flex-shrink: 0;
+    font-size: 3.5rem;
+    color: var(--code-logo-green-color)
+}
+
+.main-header p {
+    /* font-style: italic; */
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--code-logo-red-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 2px solid var(--code-logo-red-color);
+}
+
+.main-full {
+    display: flex;
+    /* margin: 20px 0; */
+}
+
+.main-img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.main-img:hover {
+    border-radius: 30px;
+    transition: 500ms;
+}
+
+.main-info {
+    display: flex;
+    gap: 2rem;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.main-info-part {
+    flex: 1;
+    max-height: fit-content;
+    border-radius: 10px;
+    background-color:#fcfefe;
+}
+
+.main-info-part img {
+    max-width: 100%;
+}
+
+.main-info-part img:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
+.main-info-header {
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    color: #966508;
+    background-color: #F7C566;
+    border-radius: 10px 10px 0 0;
+}
+
+.main-header-text {
+    padding: 20px;
+}
+
+.main-info-text {
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.main-contacts {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 30px;
+    margin: 80px 0;
+    line-height: 1.5;
+}
+
+.main-contacts-header {
+    flex: 1;
+    color: var(--code-logo-green-color);
+}
+
+.main-contacts div {
+    flex: 1;
+}
+
+.main-contacts h3 {
+    border-bottom: 2px solid #26877f;
+}
+
+.main-contacts a {
+    color: var(--code-font-darkgreen-color);
+}
+
+.main-contacts a:visited {
+    color: var(--code-font-darkgreen-color);
+}
+
+.moto-container {
+    padding: 230px 80px 0;
+    margin: 30px 0;
+    border-radius: 20px;
+
+    background-image: url(../assets/img/tropical-forest2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 800px;
+}
+
+.moto-container h3 {
+    padding: 20px;
+    border-radius: 40px;
+    background-color: #26877f4d;
+    font-size: 4.5rem;
+    text-align: center;
+    color:#def6f4;
+}
+
+.moto-container .quote {
+    color: var(--code-logo-green-color)
+}
+
+.footer-container {
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+    padding: 30px;
+    column-gap: 15%;
+    background-color: #fcfefe;
+    border-radius: 10px;
+    background-image: url("../assets/img/logo2_.png");
+    margin-top: 40px;
+}
+
+.footer-container div {
+    flex: 1;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.footer-logo-img {
+    margin-left: 1rem;
+    max-height: 100px;
+}
+
+.footer-right {
+    justify-content: flex-end;
+    text-align: right;
+    /* font-size: 0.8rem; */
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.social-img:hover {
+    transform: rotate(360deg);
+    transition: 500ms;
+}
